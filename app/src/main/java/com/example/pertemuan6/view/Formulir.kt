@@ -34,3 +34,7 @@ fun FormIsian(
     jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
     OnSubmitBtnClick: () -> Unit
 ) {
+    var nama by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+
