@@ -38,3 +38,18 @@ fun FormIsian(
     var jenisKelamin by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
 
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = stringResource(id = R.string.app_name),
+                        color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = Color(0xFF008577)
+                )
+            )
+        }
+    ) { isiRuang ->
